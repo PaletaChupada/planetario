@@ -1,0 +1,19 @@
+body{
+    background-image: url('../imagenes/fondo.png');
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#cabecera{
+    height: 300px;
+}
+
+#logoPlanetario{
+    display: block;
+    margin: auto;
+    padding: auto;
+    width: auto;
+    height: auto;
+}
+
+
+
