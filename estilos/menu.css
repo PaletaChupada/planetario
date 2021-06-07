@@ -7,7 +7,7 @@
     color: rgba(255, 255, 255, 0.685);
     cursor: pointer;
     pointer-events: none;
-    background-color: rgba(0, 0, 0, 0.411);
+    background-color: rgba(0, 0, 0, 0.281);
   }
   .menu:hover {
     pointer-events: all;
@@ -46,7 +46,16 @@
   span {
     transition: color 0.5s ease;
   }
+
+  a{
+    transition: color 0.5s ease;
+  }
+  
   .item:hover span {
+    color: #0059ff;
+  }
+
+  .item:hover a {
     color: #0059ff;
   }
   .menu:hover .spacer:before {
