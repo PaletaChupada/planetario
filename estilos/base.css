@@ -204,6 +204,15 @@ a{
     grid-column-end: 13;
 }
 
+#mapa{
+    grid-column-start: 5;
+    grid-column-end: 9;
+}
+
+.mapa{
+    height: 600px;
+}
+
 /* --- Parrafos historia --- */
 
 .parrafoHistoria{
