@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Talleres del Planetario</title>
+        <link rel="stylesheet" href="./estilos/base.css" type="text/css">
+        <link rel="stylesheet" href="./estilos/menu.css" type="text/css">
+        <script src="./scripts/galeria.js"></script>
+    </head>
+    <body>
+
+        <header>
+            <div id="cabecera">
+                <img id="logoPlanetario" src="./imagenes/Planetario_logo_resize.png" alt="Logo_Planetario">
+            </div>
+        </header>
+
+        <section id="menuPrincipal">
+            <div class="menu">
+                <div class="princ">Menu</div>
+                <div class="espacio"></div>
+                <div class="item"><span><a href="./index.html">Pagina principal</a></span></div>
+                <div class="item"><span><a href="./historia.html">Historia</a></span></div>
+                <div class="item"><span>Horarios</span></div>
+                <div class="item"><span>Costos</span></div>
+            </div>
+        </section>
+
+        <section id="Titulo">
+            <div id="textoTitulo">
+                <h1 class="titulo">Actividades Complementarias</h1>
+            </div> 
+        </section>
+
+        <section id="tallerElectro" class="componente">
+            <div class="slideshow-container">
+                <h1 class="textoCentrado">Taller Electrostatica (COMPLEMENTARIO TIPO A)</h1>
+                <div class="mySlides fade" style="display: block">
+                    <div id="impartidos" class="row">
+                        <div class="info-container left-info">
+                            <p class="parrafoTaller-left">
+                                Nombre: Electrostática (solo para preescolar)
+                            </p>
+                            <p class="parrafoTaller-left">
+                                Materia: física
+                            </p>
+                            <p class="parrafoTaller-left">
+                                Objetivo: Mostrar la generación de energía electrostática, mediante un
+                                experimento con peine, globos de látex y viruta de confeti.
+                            </p>
+                        </div>
+                        <div class="imagenTaller-right">
+                            <img src="./imagenes/electrostatica.png" class="imagenT" alt="imagen 1">
+                        </div>
+                    </div>
+                </div>
+                <div class="mySlides fade" style="display: none">
+                    <div id="impartidos" class="row">
+                        <div class="imagenTaller-left">
+                            <img src="./imagenes/electrostatica.png" class="imagenT" alt="imagen 2">
+                        </div>
+                        <div class="info-container right-info">
+                            <p class="parrafoTaller-right">
+                                Nombre: Impacto de la energía solar a través de una lupa
+                            </p>
+                            <p class="parrafoTaller-right">
+                                Materia: física
+                            </p>
+                            <p class="parrafoTaller-right">
+                                Objetivo: Experimentar la concentración de energía solar mediante una lupa,
+                                produciendo el incendio de una hoja de papel.
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <br>
+            <div style="text-align: center">
+                <span class="dot carrusel-active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </section>
+
+        <section id="talleres" class="componente">
+            <div class="infoTalleres">
+                <h1 class="textoInicial">
+                    Los talleres de ciencia y tecnologia se imparten de Lunes a Viernes de 9:00 a 14:00 horas
+                    y se aplican en todos los niveles educativos excepto eletrostatica.
+                </h1>
+            </div>
+        </section>
+
+        <section id="regresar">
+            <div class="textoCentrado">
+                <div class="textoCentrado bnt-container">
+                    <button id="regresarInicio" class="btn" onclick="location.href='#menuPrincipal'">Regresar al inicio</button>
+                </div>
+                <div class="textoCentrado bnt-container">
+                    <button id="regresarPrincipal" class="btn" onclick="location.href='./index.html'">Regresar a la pagina principal</button>
+                </div>
+            </div>
+        </section>
+        
+    <footer>
+        <br>
+        <br>
+        <p class="textoCentrado">Sitio creado por alumnos de la Escuela Superior de C&oacute;mputo | Tecnolog&iacute;as para la Web | Grupo 2CV10 | Semestre 2021-2</p>
+    </footer>
+    </body>
+</html>

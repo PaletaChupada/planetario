@@ -235,3 +235,36 @@ a{
 #parrafo1{
     margin-top: 20px;
 }
+
+
+/* --- Info Talleres --- */
+
+.parrafoTaller-left{
+    padding-left: 50px;
+    font-size: x-large;
+}
+
+.parrafoTaller-right{
+    font-size: x-large;
+}
+
+.imagenTaller-right{
+    grid-column-start: 9;
+    grid-column-end: 13;
+}
+
+.imagenTaller-left{
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+
+.imagenT{
+    height: 400px;
+}
+
+.textoInicial{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.685);
+    padding-bottom: 20px;
+    font-size: large;
+}
