@@ -3,6 +3,7 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     max-width: 100%;
     height: auto;
+    font-size: large;
 }
 
 h1{
@@ -201,4 +202,27 @@ a{
 #vid3{
     grid-column-start: 9;
     grid-column-end: 13;
+}
+
+/* --- Parrafos historia --- */
+
+.parrafoHistoria{
+    padding-top: 40px;
+    font-size: x-large;
+}
+
+.titulo{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.685);
+}
+
+#textoTitulo{
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.281);
+}
+
+#parrafo1{
+    margin-top: 20px;
 }
