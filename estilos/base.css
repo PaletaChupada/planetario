@@ -1,6 +1,12 @@
 body{
     background-image: url('../imagenes/fondo.png');
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    max-width: 100%;
+    height: auto;
+}
+
+h1{
+    padding-top: 20px;
 }
 
 #cabecera{
@@ -109,4 +115,90 @@ a{
     background-color: rgba(0, 0, 0, 0);
     color: var(--sec-color);
     border-color: var(--sec-color);
+}
+
+/* --- Muestra de galeria --- */
+
+.slideshow-container {
+    height: 480px;
+    max-width: 95%;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.imgGaleria{
+    grid-column-start: 5;
+    grid-column-end: 9;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: 10px solid rgba(221, 221, 221, 0.425);
+    border-radius: 4px;
+}
+
+/* --- Botones prev y next --- */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* --- Puntos --- */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.carrusel-active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* --- Videos --- */
+
+.galeriaVideos{
+    height: 430px;
+}
+
+#vid1{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+#vid2{
+    grid-column-start: 5;
+    grid-column-end: 9;
+}
+
+#vid3{
+    grid-column-start: 9;
+    grid-column-end: 13;
 }

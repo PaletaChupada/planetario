@@ -6,6 +6,7 @@
         <title>Planetario Luis Enrique Erro</title>
         <link rel="stylesheet" href="./estilos/base.css" type="text/css">
         <link rel="stylesheet" href="./estilos/menu.css" type="text/css">
+        <script src="./scripts/galeria.js"></script>
     </head>
     <body>
         <header>
@@ -14,17 +15,20 @@
             </div>
         </header>
 
-        <div class="menu">
-            <div class="princ">Menu</div>
-            <div class="espacio"></div>
-            <div class="item"><span><a href="#banner">Historia</a></span></div>
-            <div class="item"><span>Galeria de Imagenes</span></div>
-            <div class="item"><span>Videos</span></div>
-            <div class="item"><span>Horarios</span></div>
-            <div class="item"><span>Costos</span></div>
-            <div class="item"><span>Ubicacion</span></div>
-          </div>
-
+        <section id="menu">
+            <div class="menu">
+                <div class="princ">Menu</div>
+                <div class="espacio"></div>
+                <div class="item"><span><a href="#banner">Historia</a></span></div>
+                <div class="item"><span><a href="#galeria">Galeria de Imagenes</a></span></div>
+                <div class="item"><span><a href="#videos">Videos</a></span></div>
+                <div class="item"><span>Talleres</span></div>
+                <div class="item"><span>Horarios</span></div>
+                <div class="item"><span>Costos</span></div>
+                <div class="item"><span>Ubicacion</span></div>
+            </div>
+        </section>
+        
         <section id="banner" class="componente">
             <div class="row">
                 <div class="info-container left-info">
@@ -56,6 +60,59 @@
             </div>
         </section>
 
+        <section id="galeria" class="componente">
+            <div class="slideshow-container">
+                <h1 class="textoCentrado">Galeria de Imagenes</h1>
+                <div class="mySlides fade" style="display: block">
+                    <div class="row">
+                        <img class="imgGaleria" src="./imagenes/imagen1.jpg" alt="Talleres">
+                    </div>
+                </div>
+                <div class="mySlides fade" style="display: none">
+                    <div class="row">
+                        <img class="imgGaleria" src="./imagenes/imagen2.jpg" alt="Talleres">
+                    </div>
+                </div>
+                <div class="mySlides fade" style="display: none">
+                    <div class="row">
+                        <img class="imgGaleria" src="./imagenes/imagen3.jpg" alt="Talleres">
+                    </div>
+                </div>
+                <div class="mySlides fade" style="display: none">
+                    <div class="row">
+                        <img class="imgGaleria" src="./imagenes/imagen4.jpg" alt="Talleres">
+                    </div>
+                </div>
+                <div class="mySlides fade" style="display: none">
+                    <div class="row">
+                        <img class="imgGaleria" src="./imagenes/imagen5.jpg" alt="Talleres">
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <br>
+            <div style="text-align: center">
+                <span class="dot carrusel-active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </section>
+
+        <section id="videos" class="componente">
+            <div class="galeriaVideos">
+                <h1 class="textoCentrado">Videos</h1>
+                <div class="row">
+                    <iframe id="vid1" width="560" height="315" src="https://www.youtube.com/embed/0BOl8ETP9NA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe id="vid2" width="560" height="315" src="https://www.youtube.com/embed/pKWDn5rf45U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe id="vid3" width="560" height="315" src="https://www.youtube.com/embed/_bRLaqH9uCg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="row">
+                    
+                </div></div>
+        </section>
     <footer>
         <p class="textoCentrado">Sitio creado por alumnos de la Escuela Superior de C&oacute;mputo | Tecnolog&iacute;as para la Web | Grupo 2CV10 | Semestre 2021-2</p>
     </footer>
