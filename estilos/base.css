@@ -118,6 +118,14 @@ a{
     border-color: var(--sec-color);
 }
 
+.botonesLoginSignin {
+    padding-bottom: 60px;
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+    color: rgba(255, 255, 255, 0.685);
+}
+
 /* --- Muestra de galeria --- */
 
 .slideshow-container {
